@@ -1,0 +1,72 @@
+nav .navList ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .navList li {
+  margin: 0 20px;
+}
+
+#Home .homeImgShadow {
+  width: 110%;
+  right: 42%;
+}
+
+#Home .homeImgText {
+  right: 42%;
+}
+
+#TenisCentrum .textHeader {
+  position: relative;
+  max-width: 768px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#Personel .about .btnArr {
+  right: 4%;
+}
+
+#Personel .about .farTop {
+  bottom: 230px;
+}
+
+#Personel .about .farBot {
+  bottom: 11px;
+}
+
+#Personel .aboutPhoto {
+  margin: 0;
+}
+
+#Personel .aboutPhoto img {
+  -webkit-clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 6% 100%);
+          clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 6% 100%);
+}
+
+#Personel .aboutTextBackground {
+  margin: 0;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0% 0%, 94% 0%, 98% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 94% 0%, 98% 100%, 0% 100%);
+}
+
+#Personel .aboutText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 10px !important;
+}
+/*# sourceMappingURL=md.css.map */

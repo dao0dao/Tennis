@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAEQ,SAFC,CACL,oBAAoB,CAChB,UAAU,CAAC;EACP,WAAW,EAAE,MAAM;EACnB,YAAY,EAAE,eAAe;CAAG",
+    "sources": [
+        "../sass/xlg.sass"
+    ],
+    "names": [],
+    "file": "xlg.css"
+}

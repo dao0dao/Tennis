@@ -1,0 +1,93 @@
+.CourtsGalery:hover {
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#Home .homeArrowBot {
+  display: none;
+}
+
+#Home .homeImgHero {
+  background-image: url("../image/backgroundBig.jpg");
+}
+
+#TenisCentrum .GaleryImgFirst {
+  background-image: url("../image/galeriaTennisBig.jpg");
+}
+
+#TenisCentrum .GaleryImgSecond {
+  background-image: url("../image/galeriaTennisCourtBig.jpg");
+}
+
+#TenisCentrum .GaleryImgThird {
+  background-image: url("../image/galeriaTennisHalaBig.jpg");
+}
+
+#TenisCentrum .GaleryImgFour {
+  background-image: url("../image/galeriaTenisExpressBig.jpg");
+}
+
+#Personel .about .btnArr {
+  display: none;
+}
+
+#Personel .aboutTextBackground {
+  min-height: 346px;
+  overflow: visible;
+}
+
+#Personel .aboutTextBackground .aboutText {
+  padding-left: 5px;
+}
+
+@media screen and (min-width: 1044px) {
+  #Personel .aboutTextBackground {
+    background-image: url("../image/aboutBackgroundBig.jpg");
+    background-size: 100% auto;
+    -webkit-clip-path: polygon(0% 0%, 94% 0%, 98% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 94% 0%, 98% 100%, 0% 100%);
+  }
+}
+
+#Price .priceImage {
+  background-image: url("../image/priceBackgroundBig.jpg");
+}
+
+#Contact .contactItem {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'contact map' 'open map';
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+#Contact .contactText {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#Contact .contactOpen {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#Contact .contactMap {
+  max-width: 745px;
+  padding-right: 3%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 1139px) {
+  #Contact iframe {
+    width: 85%;
+    height: 85%;
+  }
+}
+/*# sourceMappingURL=lg.css.map */

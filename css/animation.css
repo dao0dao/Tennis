@@ -1,0 +1,114 @@
+.activeBtnTop {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.activeBtnMid {
+  opacity: 0;
+}
+
+.activeBtnBot {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+nav .navListActive {
+  left: 0;
+}
+
+nav .Spyscroll {
+  -webkit-text-decoration-color: #b91616;
+          text-decoration-color: #b91616;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+nav .Spyscroll a {
+  color: #999999;
+}
+
+@-webkit-keyframes bounceArrow {
+  0% {
+    bottom: 40px;
+  }
+  10% {
+    bottom: 0px;
+  }
+  20% {
+    bottom: 37.85px;
+  }
+  30% {
+    bottom: 0px;
+  }
+  40% {
+    bottom: 33.23px;
+  }
+  50% {
+    bottom: 0px;
+  }
+  60% {
+    bottom: 23.29px;
+  }
+  70% {
+    bottom: 0px;
+  }
+  80% {
+    bottom: 1.91px;
+  }
+  90% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+
+@keyframes bounceArrow {
+  0% {
+    bottom: 40px;
+  }
+  10% {
+    bottom: 0px;
+  }
+  20% {
+    bottom: 37.85px;
+  }
+  30% {
+    bottom: 0px;
+  }
+  40% {
+    bottom: 33.23px;
+  }
+  50% {
+    bottom: 0px;
+  }
+  60% {
+    bottom: 23.29px;
+  }
+  70% {
+    bottom: 0px;
+  }
+  80% {
+    bottom: 1.91px;
+  }
+  90% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+
+.bunceArrow {
+  -webkit-animation: 2.8s bounceArrow infinite .5s;
+          animation: 2.8s bounceArrow infinite .5s;
+}
+
+.ComeIn {
+  left: 0;
+}
+/*# sourceMappingURL=animation.css.map */

@@ -396,6 +396,7 @@ nav .mobile a {
   background-image: url("../image/priceBackgroundSmall.jpg");
   background-size: cover;
   background-position: 0px 9%;
+  z-index: -1;
 }
 
 #Price .priceText {

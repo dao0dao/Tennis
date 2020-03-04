@@ -1,13 +1,13 @@
+#Mobile {
+  display: none;
+}
+
+#Tablet {
+  display: block;
+}
+
 nav {
   z-index: 2;
-}
-
-nav .navMenu {
-  display: none;
-}
-
-nav .navMenuBtn {
-  display: none;
 }
 
 nav .navList {
@@ -38,8 +38,13 @@ nav .navList li {
 }
 
 nav .navList a {
-  display: inline;
+  display: inline-block;
+  padding: 0;
   letter-spacing: 1px;
+}
+
+nav .navList .activeMenu::before {
+  height: 20px;
 }
 
 nav .mobile {

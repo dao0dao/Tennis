@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/f32918d55f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lightbox/css/lightbox.css">
     <link rel="stylesheet" href="css/main.css">
@@ -18,7 +20,7 @@
 
 <body>
 
-    <nav>
+    <nav id="Mobile">
         <div class="navMenu">
             <button class="navMenuBtn">
                 <div class="lineTop lineMenu"></div>
@@ -28,11 +30,21 @@
         </div>
         <div class="navList">
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#TenisCentrum">Galeria</a></li>
-                <li><a href="#Personel">Kadra</a></li>
-                <li><a href="#Price">Cennik</a></li>
-                <li><a href="#Contact">Kontakt</a></li>
+                <li><a href="#Home">Home</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
+                <li><a href="#TenisCentrum">Galeria</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
+                <li><a href="#Personel">Kadra</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
+                <li><a href="#Price">Cennik</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
+                <li><a href="#Contact">Kontakt</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
             </ul>
         </div>
         <div class="mobile">
@@ -44,8 +56,29 @@
             </div>
         </div>
     </nav>
+    <nav id="Tablet">
+        <div class="navList">
+            <ul>
+                <li><a href="#Home">Home</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
+                <li><a href="#TenisCentrum">Galeria</a>
+                    <div class="activeMenu activeMenuRight"></div>
+                </li>
+                <li><a href="#Personel">Kadra</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
+                <li><a href="#Price">Cennik</a>
+                    <div class="activeMenu activeMenuRight"></div>
+                </li>
+                <li><a href="#Contact">Kontakt</a>
+                    <div class="activeMenu activeMenuLeft"></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <main>
-        <section id="Home">
+        <section id="Home" class="scrollFix">
             <div class="homeImgHero">
                 <div class="homeImgShadow"></div>
                 <div class="homeImgText">
@@ -62,7 +95,9 @@
         </section>
         <section id="TenisCentrum" class="scrollFix">
             <div class="textHeader">
-                <div class="lineDecoration"><h2>Galeria</h2></div>
+                <div class="lineDecoration">
+                    <h2>Galeria</h2>
+                </div>
                 <p>Do Państwa dyspozycji są dwa
                     kort wykonane z wysokiej klasy materiałów wyposarzonych w monitoring wewnętrzny.</p>
                 <p>Na Państwa życzenie możliwość zapisu rozgrywki.</p>
@@ -82,7 +117,9 @@
         </section>
         <section id="Personel" class="scrollFix">
             <div class="textHeader">
-                <div class="lineDecoration"><h2>Kadra</h2></div>
+                <div class="lineDecoration">
+                    <h2>Kadra</h2>
+                </div>
             </div>
             <div class="about gridContainer">
                 <div class="aboutHeader">
@@ -126,7 +163,9 @@
 
         <section id="Price" class="scrollFix">
             <div class="textHeader">
-                <div class="lineDecoration"><h2>Cennik</h2></div>
+                <div class="lineDecoration">
+                    <h2>Cennik</h2>
+                </div>
             </div>
             <div class="price">
                 <div class="priceImage"></div>
@@ -146,7 +185,9 @@
 
         <section id="Contact" class="scrollFix">
             <div class="textHeader">
-                <div class="lineDecoration"><h2>Kontakt</h2></div>
+                <div class="lineDecoration">
+                    <h2>Kontakt</h2>
+                </div>
             </div>
             <div class="contactItem">
                 <div class="contactText">
@@ -178,14 +219,14 @@
                 </div>
             </div>
         </section>
-                <div class="Regulaments">
-                    <h4>Regulamin</h4>
-                    <p>Na obiektcie obowiązuje regulamin, można go pobrać w pliku pdf:
-                        <a href="regulamin.pdf" download="Regulamin korzystania z obiektu">
-                            <i class="far fa-file-pdf"></i>
-                        </a>
-                    </p>
-                </div>
+        <div class="Regulaments">
+            <h4>Regulamin</h4>
+            <p>Na obiektcie obowiązuje regulamin, można go pobrać w pliku pdf:
+                <a href="regulamin.pdf" download="Regulamin korzystania z obiektu">
+                    <i class="far fa-file-pdf"></i>
+                </a>
+            </p>
+        </div>
     </main>
     </div>
 

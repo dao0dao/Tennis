@@ -1,17 +1,27 @@
 let $section; // sekcje
-let $liElement; // Elementy menu
+let $mobileMenu; // Elementy menu wersja na komórkę
+let $tabletMenu; // Elementy menu wersja od 576px
 
 document.addEventListener('DOMContentLoaded', () => {
 
     $section = document.querySelectorAll('section');
-    $liElement = document.querySelectorAll('li');
+    $mobileMenu = document.querySelectorAll('#Mobile li');
+    $tabletMenu = document.querySelectorAll('#Tablet li');
 
     const scrollSpy = () => {
-        for (i = 0; i < $liElement.length; i++) {
-            if (window.scrollY + 50 >= $section[i].offsetTop - 100 && window.scrollY + 50 < $section[i].offsetTop + $section[i].clientHeight - 100) {
-                $liElement[i].classList.add('Spyscroll');
+        for (i = 0; i < $mobileMenu.length; i++) {
+            if (window.scrollY >= $section[i].offsetTop && window.scrollY < $section[i].offsetTop + $section[i].clientHeight -100 ) {
+                $mobileMenu[i].classList.add('Spyscroll');
             } else {
-                $liElement[i].classList.remove('Spyscroll');
+                $mobileMenu[i].classList.remove('Spyscroll');
+            };
+
+        };
+        for (i = 0; i < $tabletMenu.length; i++) {
+            if (window.scrollY + 10 >= $section[i].offsetTop && window.scrollY < $section[i].offsetTop + $section[i].clientHeight - 150) {
+                $tabletMenu[i].classList.add('Spyscroll');
+            } else {
+                $tabletMenu[i].classList.remove('Spyscroll');
             };
 
         };

@@ -19,9 +19,12 @@ body {
 
 .scrollFix::before {
   display: block;
+  position: relative;
   content: '';
   width: 100vw;
   height: 50px;
+  margin-top: -100px;
+  z-index: -1;
 }
 
 .textHeader .lineDecoration {
@@ -62,8 +65,13 @@ span {
   color: #ffffff;
 }
 
+#Tablet {
+  display: none;
+}
+
 nav {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   height: 50px;
   top: 0;
@@ -108,7 +116,7 @@ nav .navList {
   top: 0;
   left: 100%;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   padding-top: 50px;
   background-color: #363535;
   z-index: 1;
@@ -122,7 +130,6 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 1px solid #b91616;
   font-size: 1rem;
   list-style: none;
   -webkit-transition: 1s;
@@ -132,9 +139,41 @@ nav li {
 nav li a {
   display: inline-block;
   width: 100%;
-  padding: 10px;
+  padding: 5px 15px;
   text-decoration: none;
   color: #ffffff;
+}
+
+nav li .activeMenu {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #b91616;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav li .activeMenu::before {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  content: '';
+  height: 25px;
+  width: 2px;
+  background-color: #b91616;
+}
+
+nav li .activeMenuLeft::before {
+  left: 1px;
+  -webkit-transform: skew(-13deg);
+          transform: skew(-13deg);
+}
+
+nav li .activeMenuRight::before {
+  right: 1px;
+  -webkit-transform: skew(13deg);
+          transform: skew(13deg);
 }
 
 nav .mobile {
@@ -154,6 +193,10 @@ nav .mobile a {
   padding: 5px;
   font-size: 1.2rem;
   color: #fff;
+}
+
+#Home {
+  padding-bottom: 50px;
 }
 
 #Home .homeImgHero {
@@ -217,13 +260,13 @@ nav .mobile a {
 }
 
 #TenisCentrum .lineDecoration {
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #TenisCentrum .lineDecoration::after {
-  left: 2px;
-  -webkit-transform: skew(-13deg);
-          transform: skew(-13deg);
+  right: 2px;
+  -webkit-transform: skew(13deg);
+          transform: skew(13deg);
   background-color: #b91616;
 }
 
@@ -282,13 +325,13 @@ nav .mobile a {
 }
 
 #Personel .lineDecoration {
-  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #Personel .lineDecoration::after {
-  right: 3px;
-  -webkit-transform: skew(13deg);
-          transform: skew(13deg);
+  left: 2px;
+  -webkit-transform: skew(-13deg);
+          transform: skew(-13deg);
   background-color: #b91616;
 }
 
@@ -373,13 +416,13 @@ nav .mobile a {
 }
 
 #Price .lineDecoration {
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #Price .lineDecoration::after {
-  left: 3px;
-  -webkit-transform: skew(-13deg);
-          transform: skew(-13deg);
+  right: 3px;
+  -webkit-transform: skew(13deg);
+          transform: skew(13deg);
   background-color: #b91616;
 }
 
@@ -428,13 +471,13 @@ nav .mobile a {
 }
 
 #Contact .lineDecoration {
-  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #Contact .lineDecoration::after {
-  right: 3px;
-  -webkit-transform: skew(13deg);
-          transform: skew(13deg);
+  left: 2px;
+  -webkit-transform: skew(-13deg);
+          transform: skew(-13deg);
   background-color: #b91616;
 }
 

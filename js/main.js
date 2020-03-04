@@ -6,9 +6,6 @@ let $lineBot; // Dolna linia menu
 let $aboutMe; // Tekst o trenerze
 let $aboutBtnTop; // Przycisk do góry w sekcji o mnie
 let $aboutBtnBot; // Przycisk na dół w sekcji o mnie
-let $priceElement; // Przewijany element w sekcji Cena-regulamin - TABLICA
-let $btnPrice; // Przycisk cena
-let $btnRegulaments; // Przycisk regulamin
 
 const $main = () => {
     $prepairDomElemnts();
@@ -24,9 +21,7 @@ const $prepairDomElemnts = () => {
     $aboutMe = document.querySelector('.aboutTextBackground');
     $aboutBtnTop = document.querySelector('.farTop');
     $aboutBtnBot = document.querySelector('.farBot');
-    $priceElement = document.querySelectorAll('.priceElement');
-    $btnPrice = document.querySelector('.btnPrice');
-    $btnRegulaments = document.querySelector('.btnRegulaments');
+
 
 };
 //Events
@@ -62,6 +57,7 @@ const $prepairDomEvents = () => {
 //Functions
 const $showMenu = () => {
     $navList.classList.toggle('navListActive');
+    
 };
 
 const $hideMenu = () => {
@@ -93,16 +89,6 @@ const $aboutBtnShowHide = () => {
         default:
             $aboutBtnTop.style.visibility = 'visible';
             $aboutBtnBot.style.visibility = 'visible';
-    };
-};
-const $moveUpPrice = () => {
-    for (element of $priceElement) {
-        element.classList.add('priceElementActive')
-    };
-};
-const $moveDownPrice = () => {
-    for (element of $priceElement) {
-        element.classList.remove('priceElementActive')
     };
 };
 

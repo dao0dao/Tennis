@@ -13,22 +13,6 @@
   background-image: url("../image/backgroundBig.jpg");
 }
 
-#TenisCentrum .GaleryImgFirst {
-  background-image: url("../image/galeriaTennisBig.jpg");
-}
-
-#TenisCentrum .GaleryImgSecond {
-  background-image: url("../image/galeriaTennisCourtBig.jpg");
-}
-
-#TenisCentrum .GaleryImgThird {
-  background-image: url("../image/galeriaTennisHalaBig.jpg");
-}
-
-#TenisCentrum .GaleryImgFour {
-  background-image: url("../image/galeriaTenisExpressBig.jpg");
-}
-
 #Personel .about .btnArr {
   display: none;
 }
@@ -44,15 +28,10 @@
 
 @media screen and (min-width: 1044px) {
   #Personel .aboutTextBackground {
-    background-image: url("../image/aboutBackgroundBig.jpg");
     background-size: 100% auto;
     -webkit-clip-path: polygon(0% 0%, 94% 0%, 98% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 94% 0%, 98% 100%, 0% 100%);
   }
-}
-
-#Price .priceImage {
-  background-image: url("../image/priceBackgroundBig.jpg");
 }
 
 #Contact .contactItem {

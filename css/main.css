@@ -301,22 +301,18 @@ nav .mobile a {
 
 #TenisCentrum .GaleryImgFirst {
   left: 15%;
-  background-image: url("../image/galeriaTennisSmall.jpg");
 }
 
 #TenisCentrum .GaleryImgSecond {
   left: 5%;
-  background-image: url("../image/galeriaTennisCourtSmall.jpg");
 }
 
 #TenisCentrum .GaleryImgThird {
   left: -5%;
-  background-image: url("../image/galeriaTennisHalaSmall.jpg");
 }
 
 #TenisCentrum .GaleryImgFour {
   left: -15%;
-  background-image: url("../image/galeriaTenisExpressSmall.jpg");
 }
 
 #Personel {
@@ -392,7 +388,6 @@ nav .mobile a {
   scroll-behavior: smooth;
   background-size: auto;
   background-repeat: no-repeat;
-  background-image: url("../image/aboutBackgroundSmall.jpg");
   -webkit-clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
           clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
 }
@@ -436,7 +431,6 @@ nav .mobile a {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("../image/priceBackgroundSmall.jpg");
   background-size: cover;
   background-position: 0px 9%;
   z-index: -1;

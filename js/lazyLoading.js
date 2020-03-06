@@ -35,7 +35,7 @@ const showGalery = function () {
         for (const element of $galeryElemnts) {
             element.style.backgroundImage = `url(${element.dataset.lazy_galery_smal_src})`;
         }
-    } else {
+    } else if (window.scrollY + window.innerHeight > $galery.offsetTop && window.innerWidth >= 992) {
         for (const element of $galeryElemnts) {
             element.style.backgroundImage = `url(${element.dataset.lazy_galery_big_src})`
         }
@@ -43,14 +43,14 @@ const showGalery = function () {
     if (window.scrollY + window.innerHeight > $personel.offsetTop && window.innerWidth < 992) {
         $personelPhoto.src = $personelPhoto.dataset.lazy_photo
         $personelText.style.backgroundImage = `url(${$personelText.dataset.lazy_photo_small_background})`
-    } else {
+    } else if (window.scrollY + window.innerHeight > $personel.offsetTop && window.innerWidth >= 992) {
         $personelPhoto.src = $personelPhoto.dataset.lazy_photo
         $personelText.style.backgroundImage = `url(${$personelText.dataset.lazy_photo_big_background})`
 
     };
     if (window.scrollY + window.innerHeight > $pirce.offsetTop && window.innerWidth < 992) {
         $priceImage.style.backgroundImage = `url(${$priceImage.dataset.lazy_small_price_background})`
-    } else {
+    } else if (window.scrollY + window.innerHeight > $pirce.offsetTop && window.innerWidth >= 992) {
         $priceImage.style.backgroundImage = `url(${$priceImage.dataset.lazy_big_price_background})`
     };
 }

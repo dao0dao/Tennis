@@ -25,7 +25,7 @@ const $prepairDomElemnts = () => {
 };
 //Events
 const $prepairDomEvents = () => {
-   // showGalery();
+    showGalery();
     window.addEventListener('scroll', showGalery);
 }
 // Functions

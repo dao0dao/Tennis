@@ -58,8 +58,9 @@ const showGalery = function () {
     } else if (window.scrollY + window.innerHeight > $pirce.offsetTop && window.innerWidth >= 992) {
         $priceImage.style.backgroundImage = `url(${$priceImage.dataset.lazy_big_price_background})`
     };
-    if (window.scrollY + window.innerHeight > $contact.offsetTop) {
+    if (window.scrollY + window.innerHeight > $contact.offsetTop && $contactMap.dataset.src_true == 'false') {
         $contactMap.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1199.5624658016432!2d18.682028658276362!3d53.0360919949788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDAyJzA5LjkiTiAxOMKwNDAnNTkuMiJF!5e0!3m2!1spl!2spl!4v1582222044744!5m2!1spl!2spl"
+        $contactMap.dataset.src_true = 'true'
     };
 }
 

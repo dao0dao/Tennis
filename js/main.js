@@ -44,15 +44,6 @@ const $prepairDomEvents = () => {
         $aboutScrollDown();
         
     });
-    $btnRegulaments.addEventListener('click', () => {
-        $moveUpPrice();
-        regulamentsActiveOnly()
-       
-    });
-    $btnPrice.addEventListener('click', () => {
-        $moveDownPrice();
-       
-    });
 };
 //Functions
 const $showMenu = () => {

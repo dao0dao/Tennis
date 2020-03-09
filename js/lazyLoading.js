@@ -8,31 +8,22 @@ let $priceImage; // Tło cennika
 let $contact; // Kontakt
 let $contactMap; // Mapa googla
 
-const $main = () => {
-    $prepairDomElemnts();
-    $prepairDomEvents();
-};
 
 //Elements
-const $prepairDomElemnts = () => {
-    $galeryElemnts = document.querySelectorAll('.lazyGalerty');
-    $galery = document.querySelector('#TenisCentrum .gridContainer');
 
-    $personel = document.querySelector('#Personel .gridContainer');
-    $personelPhoto = document.querySelector('#Personel img');
-    $personelText = document.querySelector('#Personel .aboutTextBackground');
+$galeryElemnts = document.querySelectorAll('.lazyGalerty');
+$galery = document.querySelector('#TenisCentrum .gridContainer');
 
-    $pirce = document.querySelector('#Price');
-    $priceImage = document.querySelector('#Price .priceImage');
+$personel = document.querySelector('#Personel .gridContainer');
+$personelPhoto = document.querySelector('#Personel img');
+$personelText = document.querySelector('#Personel .aboutTextBackground');
 
-    $contact = document.querySelector('#Contact');
-    $contactMap = document.querySelector('#Contact iframe');
-};
-//Events
-const $prepairDomEvents = () => {
-    showGalery();
-    window.addEventListener('scroll', showGalery);
-}
+$pirce = document.querySelector('#Price');
+$priceImage = document.querySelector('#Price .priceImage');
+
+$contact = document.querySelector('#Contact');
+$contactMap = document.querySelector('#Contact iframe');
+
 // Functions
 
 const showGalery = function () {
@@ -64,11 +55,7 @@ const showGalery = function () {
     };
 }
 
+//Events
 
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', $main());
+showGalery();
+window.addEventListener('scroll', showGalery);

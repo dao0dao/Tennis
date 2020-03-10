@@ -16,8 +16,65 @@
           transform: rotate(-45deg);
 }
 
+@-webkit-keyframes activeNavigation {
+  0% {
+    display: none;
+    left: 100%;
+  }
+  1% {
+    display: block;
+  }
+  5% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes activeNavigation {
+  0% {
+    display: none;
+    left: 100%;
+  }
+  1% {
+    display: block;
+  }
+  5% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes deactiveNavigation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes deactiveNavigation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 nav .navListActive {
-  left: 0;
+  display: block;
+  -webkit-animation: activeNavigation 1s forwards;
+          animation: activeNavigation 1s forwards;
+}
+
+nav .navListDeactive {
+  -webkit-animation: deactiveNavigation 1s forwards;
+          animation: deactiveNavigation 1s forwards;
 }
 
 .Spyscroll .activeMenu {

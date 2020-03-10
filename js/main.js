@@ -42,13 +42,22 @@ const $prepairDomEvents = () => {
     });
     $aboutBtnBot.addEventListener('click', () => {
         $aboutScrollDown();
-        
+
     });
 };
 //Functions
 const $showMenu = () => {
-    $navList.classList.toggle('navListActive');
-    
+    if ($navList.dataset.active_menu == 'false') {
+        $navList.classList.add('navListActive');
+        $navList.dataset.active_menu = 'true'
+    } else if ($navList.dataset.active_menu == 'true') {
+        $navList.classList.add('navListDeactive');
+        $navList.dataset.active_menu = 'false'
+        setTimeout(() => {
+            $navList.classList.remove('navListActive');
+            $navList.classList.remove('navListDeactive');
+        }, 1000);
+    }
 };
 
 const $hideMenu = () => {

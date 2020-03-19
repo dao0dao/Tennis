@@ -71,6 +71,11 @@ const fShowContactHeader = () => {
     };
 };
 
+fShowGaleryHeader();
+fShowPersonelHeader();
+fShowPriceHeader();
+fShowContactHeader();
+
 const $arrAnimation = [fShowGaleryHeader, fShowPersonelHeader, fShowPriceHeader, fShowContactHeader];
 let $animated = document.querySelectorAll('.animated');
 let $checkedAnimated;

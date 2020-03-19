@@ -52,7 +52,12 @@ nav .navList li {
 nav .navList a {
   display: inline-block;
   padding: 0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+}
+
+nav .navList a:hover {
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 nav .navList .activeMenu::before {

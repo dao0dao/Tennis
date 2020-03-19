@@ -20,7 +20,7 @@ const $contactParent = document.querySelector('#Contact .contactItem'); // Blok 
 $homeHeader.classList.add('animationHomeHeader');
 
 const fShowGaleryHeader = () => {
-    if (scrollY + window.innerHeight > $galeryHeader[0].offsetParent.offsetTop) {
+    if (scrollY + window.innerHeight > $galeryHeader[0].offsetParent.offsetTop + 100) {
         $galeryLine.classList.add('lineCenter');
         for (const letter of $galeryHeader) {
             letter.classList.add('animationHeaderLeft');

@@ -60,11 +60,6 @@ body {
   color: #444444;
 }
 
-span {
-  font-weight: bold;
-  color: #ffffff;
-}
-
 #Tablet {
   display: none;
 }
@@ -400,6 +395,11 @@ nav .mobile a {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+#Personel .aboutTextBackground .aboutText span {
+  font-weight: bold;
+  color: #ffffff;
+}
+
 #Personel .aboutTextBackground .aboutText p {
   color: #ffffff;
 }
@@ -452,6 +452,11 @@ nav .mobile a {
   line-height: 1.5rem;
   color: #cccccc;
   background-color: #000000b0;
+}
+
+#Price .priceText span {
+  font-weight: bold;
+  color: #ffffff;
 }
 
 #Price .priceText p {

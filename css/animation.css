@@ -158,7 +158,76 @@ nav .navListDeactive {
           animation: 2.8s bounceArrow infinite .5s;
 }
 
-.ComeIn {
+#Home .animationHomeHeader {
   left: 0;
+  opacity: 1;
+  -webkit-transition: opacity 4s 0.5s, left 2s;
+  transition: opacity 4s 0.5s, left 2s;
+}
+
+.animationHeaderLeft {
+  left: 0;
+  opacity: 1;
+}
+
+.animationHeaderRight {
+  right: 0;
+  opacity: 1;
+}
+
+.lineCenter {
+  left: 50% !important;
+  opacity: 1 !important;
+}
+
+.t1 {
+  -webkit-transition: 0.5s 1.45s;
+  transition: 0.5s 1.45s;
+}
+
+.t2 {
+  -webkit-transition: 0.5s 1.35s;
+  transition: 0.5s 1.35s;
+}
+
+.t3 {
+  -webkit-transition: 0.5s 1.25s;
+  transition: 0.5s 1.25s;
+}
+
+.t3 {
+  -webkit-transition: 0.5s 1.15s;
+  transition: 0.5s 1.15s;
+}
+
+.t4 {
+  -webkit-transition: 0.5s 1.05s;
+  transition: 0.5s 1.05s;
+}
+
+.t5 {
+  -webkit-transition: 0.5s .95s;
+  transition: 0.5s .95s;
+}
+
+.t6 {
+  -webkit-transition: 0.5s .85s;
+  transition: 0.5s .85s;
+}
+
+.t7 {
+  -webkit-transition: 0.5s .75s;
+  transition: 0.5s .75s;
+}
+
+.t8 {
+  -webkit-transition: 0.5s 0.5s;
+  transition: 0.5s 0.5s;
+}
+
+.opacity {
+  opacity: 1 !important;
+  -webkit-transition: 0.8s 2s;
+  transition: 0.8s 2s;
 }
 /*# sourceMappingURL=animation.css.map */

@@ -1,3 +1,5 @@
+// Ładuje tylko obrazki, sekcje są cały czas widoczne
+
 let $galery; // Sekcja galeria
 let $galeryElemnts; //Tablica galerii
 let $personel; // Sekcja Kadra

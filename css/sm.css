@@ -1,3 +1,15 @@
+.left {
+  position: relative;
+  left: -100%;
+  opacity: 0;
+}
+
+.right {
+  position: relative;
+  right: -100%;
+  opacity: 0;
+}
+
 #Mobile {
   display: none;
 }
@@ -67,17 +79,30 @@ nav .mobile {
           align-items: center;
 }
 
-#Home .textHeader {
-  display: inline-block;
+#Home h1 {
   position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: -100%;
+  opacity: 0;
+}
+
+#TenisCentrum .lineDecoration {
+  left: 37%;
+  opacity: 0;
+}
+
+#TenisCentrum p {
+  opacity: 0;
 }
 
 #TenisCentrum .gridContainer {
   min-height: 0;
   height: 300px;
+  opacity: 0;
+}
+
+#Personel .lineDecoration {
+  left: 56%;
+  opacity: 0;
 }
 
 #Personel .about .btnArr {
@@ -107,6 +132,7 @@ nav .mobile {
   margin: 5px auto;
   border-radius: 10px;
   width: 97vw;
+  opacity: 0;
 }
 
 #Personel .aboutHeader {
@@ -143,7 +169,13 @@ nav .mobile {
   padding: 0;
 }
 
+#Price .lineDecoration {
+  left: 44%;
+  opacity: 0;
+}
+
 #Price .price {
+  opacity: 0;
   -webkit-clip-path: none;
           clip-path: none;
 }
@@ -168,6 +200,11 @@ nav .mobile {
   transition: 1s;
 }
 
+#Contact .lineDecoration {
+  left: 57%;
+  opacity: 0;
+}
+
 #Contact .contactItem {
   display: -ms-grid;
   display: grid;
@@ -179,6 +216,7 @@ nav .mobile {
   grid-gap: 15px;
   margin: 20px 0 20px;
   justify-items: center;
+  opacity: 0;
 }
 
 #Contact .contactText {

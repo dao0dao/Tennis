@@ -20,17 +20,17 @@ const $contactParent = document.querySelector('#Contact .contactItem'); // Blok 
 $homeHeader.classList.add('animationHomeHeader');
 
 const fShowGaleryHeader = () => {
-    if (scrollY + window.innerHeight > $galeryHeader[0].offsetParent.offsetTop + 100) {
+    if (scrollY + window.innerHeight > $galeryHeader[0].offsetParent.offsetParent.offsetTop) {
         $galeryLine.classList.add('lineCenter');
         for (const letter of $galeryHeader) {
             letter.classList.add('animationHeaderLeft');
             $galeryHeader[0].dataset.animated = "true";
         };
-        for (const element of $galeryText){
+        for (const element of $galeryText) {
             element.classList.add('opacity');
         };
         $galery.classList.add('opacity');
-        
+
         return $galeryHeader[0].dataset.animated;
     };
 };

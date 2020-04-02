@@ -3,11 +3,12 @@
 Strona w budowie, na zlecenie właściciela kortów tenisowych.
 
 Użyte rozwiązania:
-1. Flexbox
-2. Grid
-3. Lazy loading - moje autorstwo
-4. Scroll spy - moje autorstwo
-5. Lightbox - https://lokeshdhakar.com/projects/lightbox2/
+1. RWD
+2. Flexbox
+3. Grid
+4. Lazy loading - moje autorstwo
+5. Scroll spy - moje autorstwo
+6. Lightbox - https://lokeshdhakar.com/projects/lightbox2/
 
 Live page: https://dao0dao.github.io/tennisMM/
 

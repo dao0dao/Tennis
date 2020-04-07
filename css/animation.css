@@ -19,50 +19,50 @@
 @-webkit-keyframes activeNavigation {
   0% {
     display: none;
-    left: 100%;
+    top: -110vh;
   }
   1% {
     display: block;
   }
   5% {
-    left: 100%;
+    top: -110vh;
   }
   100% {
-    left: 0;
+    top: 0;
   }
 }
 
 @keyframes activeNavigation {
   0% {
     display: none;
-    left: 100%;
+    top: -110vh;
   }
   1% {
     display: block;
   }
   5% {
-    left: 100%;
+    top: -110vh;
   }
   100% {
-    left: 0;
+    top: 0;
   }
 }
 
 @-webkit-keyframes deactiveNavigation {
   0% {
-    left: 0;
+    top: 0;
   }
   100% {
-    left: 100%;
+    top: -110vh;
   }
 }
 
 @keyframes deactiveNavigation {
   0% {
-    left: 0;
+    top: 0;
   }
   100% {
-    left: 100%;
+    top: -110vh;
   }
 }
 

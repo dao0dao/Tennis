@@ -189,10 +189,6 @@ nav .mobile a {
   color: #fff;
 }
 
-#Home {
-  padding-bottom: 50px;
-}
-
 #Home .homeImgHero {
   position: relative;
   width: 100vw;
@@ -250,7 +246,7 @@ nav .mobile a {
 }
 
 #TenisCentrum {
-  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #TenisCentrum .lineDecoration {
@@ -311,7 +307,7 @@ nav .mobile a {
 
 #Personel {
   background-color: none;
-  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #Personel .lineDecoration {
@@ -406,7 +402,7 @@ nav .mobile a {
 
 #Price {
   padding: 0 10px;
-  padding-bottom: 50px !important;
+  padding-top: 50px !important;
 }
 
 #Price .lineDecoration {
@@ -464,7 +460,7 @@ nav .mobile a {
 }
 
 #Contact {
-  padding-bottom: 50px;
+  padding-top: 50px;
   background-color: none;
 }
 

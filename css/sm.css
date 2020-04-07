@@ -24,7 +24,7 @@ nav {
 
 nav .navList {
   display: inline-block;
-  left: 0;
+  top: 0;
   height: 50px;
   padding-top: 0;
   text-align: center;

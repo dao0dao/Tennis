@@ -9,13 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     $tabletMenu = document.querySelectorAll('#Tablet li');
 
     const scrollSpy = () => {
+        //mobile
         for (i = 0; i < $mobileMenu.length; i++) {
-            if (window.scrollY >= $section[i].offsetTop && window.scrollY < $section[i].offsetTop + $section[i].clientHeight -100 ) {
+            if (window.scrollY + 100 >= $section[i].offsetTop && window.scrollY + 100 < $section[i].offsetTop + $section[i].clientHeight) {
                 $mobileMenu[i].classList.add('Spyscroll');
             } else {
                 $mobileMenu[i].classList.remove('Spyscroll');
             };
 
+            //tablet+
         };
         for (i = 0; i < $tabletMenu.length; i++) {
             if (window.scrollY + 10 >= $section[i].offsetTop && window.scrollY < $section[i].offsetTop + $section[i].clientHeight - 150) {

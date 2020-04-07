@@ -56,7 +56,7 @@ const $showMenu = () => {
         setTimeout(() => {
             $navList.classList.remove('navListActive');
             $navList.classList.remove('navListDeactive');
-        }, 1000);
+        }, 2000);
     }
 };
 

@@ -109,9 +109,9 @@ nav .lineMid {
 nav .navList {
   display: none;
   position: relative;
-  top: -110vh;
+  top: -100vh;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   padding-top: 50px;
   background-color: #363535;
   z-index: 1;
